@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FFAEA880738CA2FDF671EC6 /* Pods_MemeAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2FD56684D6F2B031B21CF9 /* Pods_MemeAlarm.framework */; };
+		DFB03807280829CD00806CB6 /* WhiteBoxList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB03806280829CD00806CB6 /* WhiteBoxList.swift */; };
+		DFB0380928082DBB00806CB6 /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0380828082DBB00806CB6 /* SettingsDetailView.swift */; };
+		E808568C26E8E67300C91EBA /* SavedSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = E808568B26E8E67300C91EBA /* SavedSettings.json */; };
+		E841868A26E4C5D50032194E /* StorageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E841868926E4C5D50032194E /* StorageFunctions.swift */; };
+		E841869026E4C6080032194E /* LocalSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = E841868F26E4C6080032194E /* LocalSettings.json */; };
+		EE00132126F9F85A0013531A /* Vintage Warning Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131226F9F8580013531A /* Vintage Warning Alarm.mp3 */; };
+		EE00132226F9F85A0013531A /* Tolling Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131326F9F8580013531A /* Tolling Bell.mp3 */; };
+		EE00132326F9F85A0013531A /* Tornado Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131426F9F8580013531A /* Tornado Siren.mp3 */; };
+		EE00132426F9F85A0013531A /* Old Fashioned School Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131526F9F8580013531A /* Old Fashioned School Bell.mp3 */; };
+		EE00132526F9F85A0013531A /* Woop Woop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131626F9F8580013531A /* Woop Woop.mp3 */; };
+		EE00132626F9F85A0013531A /* Analogue Watch Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131726F9F8590013531A /* Analogue Watch Alarm.mp3 */; };
+		EE00132726F9F85A0013531A /* Dog Barking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131826F9F8590013531A /* Dog Barking.mp3 */; };
+		EE00132826F9F85A0013531A /* Cartoon Telephone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131926F9F8590013531A /* Cartoon Telephone.mp3 */; };
+		EE00132926F9F85A0013531A /* Annoying Alarm Clock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131A26F9F8590013531A /* Annoying Alarm Clock.mp3 */; };
+		EE00132A26F9F85A0013531A /* Seagulls.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131B26F9F8590013531A /* Seagulls.mp3 */; };
+		EE00132B26F9F85A0013531A /* Morning Clock Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131C26F9F85A0013531A /* Morning Clock Alarm.mp3 */; };
+		EE00132C26F9F85A0013531A /* Alarm Fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131D26F9F85A0013531A /* Alarm Fast.mp3 */; };
+		EE00132D26F9F85A0013531A /* School Fire Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131E26F9F85A0013531A /* School Fire Alarm.mp3 */; };
+		EE00132E26F9F85A0013531A /* Ship Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00131F26F9F85A0013531A /* Ship Bell.mp3 */; };
+		EE00132F26F9F85A0013531A /* Formula 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE00132026F9F85A0013531A /* Formula 1.mp3 */; };
+		EE067AE226EA1A3F00564B6E /* DayCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE067AE126EA1A3F00564B6E /* DayCircles.swift */; };
+		EE08184926D3CC13005E74DD /* MemeFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08184826D3CC13005E74DD /* MemeFullScreen.swift */; };
+		EE08184B26D3CC41005E74DD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08184A26D3CC41005E74DD /* Models.swift */; };
+		EE08184D26D3CD97005E74DD /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08184C26D3CD97005E74DD /* AlarmModel.swift */; };
+		EE30D25D26DE726100AF0DC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE30D25C26DE726100AF0DC7 /* GoogleService-Info.plist */; };
+		EE39CDA226DFB9E700DE0348 /* EditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CDA126DFB9E700DE0348 /* EditAlarm.swift */; };
+		EE3FB20E26F0B799005C26BD /* ListSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FB20D26F0B799005C26BD /* ListSounds.swift */; };
+		EE3FB21026F0BC04005C26BD /* SoundControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FB20F26F0BC04005C26BD /* SoundControls.swift */; };
+		EE4B6FB026D27E6E005352A2 /* MemeAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4B6FAF26D27E6E005352A2 /* MemeAlarmApp.swift */; };
+		EE4B6FB226D27E6E005352A2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4B6FB126D27E6E005352A2 /* MainTabView.swift */; };
+		EE4B6FB426D27E71005352A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4B6FB326D27E71005352A2 /* Assets.xcassets */; };
+		EE4B6FB726D27E71005352A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4B6FB626D27E71005352A2 /* Preview Assets.xcassets */; };
+		EE4B6FC426D2822B005352A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4B6FC326D2822B005352A2 /* HomeView.swift */; };
+		EE4B6FC626D2823C005352A2 /* ListAlarms.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4B6FC526D2823C005352A2 /* ListAlarms.swift */; };
+		EE4B6FC826D28251005352A2 /* ListFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4B6FC726D28251005352A2 /* ListFavourites.swift */; };
+		EE4B6FCA26D2825A005352A2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4B6FC926D2825A005352A2 /* Settings.swift */; };
+		EE56151326DA36E7005B4098 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE56151126DA3693005B4098 /* ImageLoader.swift */; };
+		EE56151426DA36EA005B4098 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE56151226DA3693005B4098 /* URLImage.swift */; };
+		EE58AA5F26ECC17800BECB02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE58AA5E26ECC17800BECB02 /* Constants.swift */; };
+		EEF57C7D26F5ECA8004187F2 /* Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEF57C7C26F5ECA8004187F2 /* Siren.mp3 */; };
+		EEF57C7F26F5ECBB004187F2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF57C7E26F5ECBB004187F2 /* logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E75C056FDA66BA0F39FF42D /* Pods-MemeAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeAlarm.release.xcconfig"; path = "Target Support Files/Pods-MemeAlarm/Pods-MemeAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		87EC922CA6C75C2451F34943 /* Pods-MemeAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeAlarm.debug.xcconfig"; path = "Target Support Files/Pods-MemeAlarm/Pods-MemeAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		DFB03806280829CD00806CB6 /* WhiteBoxList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBoxList.swift; sourceTree = "<group>"; };
+		DFB0380828082DBB00806CB6 /* SettingsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDetailView.swift; sourceTree = "<group>"; };
+		E808568B26E8E67300C91EBA /* SavedSettings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SavedSettings.json; sourceTree = "<group>"; };
+		E841868926E4C5D50032194E /* StorageFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageFunctions.swift; sourceTree = "<group>"; };
+		E841868F26E4C6080032194E /* LocalSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocalSettings.json; sourceTree = "<group>"; };
+		EE00131226F9F8580013531A /* Vintage Warning Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vintage Warning Alarm.mp3"; sourceTree = "<group>"; };
+		EE00131326F9F8580013531A /* Tolling Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tolling Bell.mp3"; sourceTree = "<group>"; };
+		EE00131426F9F8580013531A /* Tornado Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tornado Siren.mp3"; sourceTree = "<group>"; };
+		EE00131526F9F8580013531A /* Old Fashioned School Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Old Fashioned School Bell.mp3"; sourceTree = "<group>"; };
+		EE00131626F9F8580013531A /* Woop Woop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Woop Woop.mp3"; sourceTree = "<group>"; };
+		EE00131726F9F8590013531A /* Analogue Watch Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Analogue Watch Alarm.mp3"; sourceTree = "<group>"; };
+		EE00131826F9F8590013531A /* Dog Barking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dog Barking.mp3"; sourceTree = "<group>"; };
+		EE00131926F9F8590013531A /* Cartoon Telephone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cartoon Telephone.mp3"; sourceTree = "<group>"; };
+		EE00131A26F9F8590013531A /* Annoying Alarm Clock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Annoying Alarm Clock.mp3"; sourceTree = "<group>"; };
+		EE00131B26F9F8590013531A /* Seagulls.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seagulls.mp3; sourceTree = "<group>"; };
+		EE00131C26F9F85A0013531A /* Morning Clock Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Morning Clock Alarm.mp3"; sourceTree = "<group>"; };
+		EE00131D26F9F85A0013531A /* Alarm Fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alarm Fast.mp3"; path = "MemeAlarm/SupportingFiles/Alarm Fast.mp3"; sourceTree = SOURCE_ROOT; };
+		EE00131E26F9F85A0013531A /* School Fire Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Fire Alarm.mp3"; sourceTree = "<group>"; };
+		EE00131F26F9F85A0013531A /* Ship Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ship Bell.mp3"; sourceTree = "<group>"; };
+		EE00132026F9F85A0013531A /* Formula 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Formula 1.mp3"; sourceTree = "<group>"; };
+		EE067AE126EA1A3F00564B6E /* DayCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCircles.swift; sourceTree = "<group>"; };
+		EE08184826D3CC13005E74DD /* MemeFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeFullScreen.swift; sourceTree = "<group>"; };
+		EE08184A26D3CC41005E74DD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EE08184C26D3CD97005E74DD /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		EE30D25C26DE726100AF0DC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE39CDA126DFB9E700DE0348 /* EditAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAlarm.swift; sourceTree = "<group>"; };
+		EE3FB20D26F0B799005C26BD /* ListSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSounds.swift; sourceTree = "<group>"; };
+		EE3FB20F26F0BC04005C26BD /* SoundControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundControls.swift; sourceTree = "<group>"; };
+		EE4B6FAC26D27E6E005352A2 /* MemeAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4B6FAF26D27E6E005352A2 /* MemeAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeAlarmApp.swift; sourceTree = "<group>"; };
+		EE4B6FB126D27E6E005352A2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		EE4B6FB326D27E71005352A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE4B6FB626D27E71005352A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE4B6FB826D27E72005352A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4B6FC326D2822B005352A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EE4B6FC526D2823C005352A2 /* ListAlarms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAlarms.swift; sourceTree = "<group>"; };
+		EE4B6FC726D28251005352A2 /* ListFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavourites.swift; sourceTree = "<group>"; };
+		EE4B6FC926D2825A005352A2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EE56151126DA3693005B4098 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		EE56151226DA3693005B4098 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		EE58AA5E26ECC17800BECB02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEF57C7C26F5ECA8004187F2 /* Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Siren.mp3; sourceTree = "<group>"; };
+		EEF57C7E26F5ECBB004187F2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		FC2FD56684D6F2B031B21CF9 /* Pods_MemeAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE4B6FA926D27E6E005352A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFAEA880738CA2FDF671EC6 /* Pods_MemeAlarm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F5B5152EC0EB78806438969 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC2FD56684D6F2B031B21CF9 /* Pods_MemeAlarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3F51ABD7E5F555B41A4418E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87EC922CA6C75C2451F34943 /* Pods-MemeAlarm.debug.xcconfig */,
+				6E75C056FDA66BA0F39FF42D /* Pods-MemeAlarm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE4B6FA326D27E6E005352A2 = {
+			isa = PBXGroup;
+			children = (
+				EE4B6FAE26D27E6E005352A2 /* MemeAlarm */,
+				EE4B6FAD26D27E6E005352A2 /* Products */,
+				A3F51ABD7E5F555B41A4418E /* Pods */,
+				9F5B5152EC0EB78806438969 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE4B6FAD26D27E6E005352A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE4B6FAC26D27E6E005352A2 /* MemeAlarm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE4B6FAE26D27E6E005352A2 /* MemeAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				EEF57C7B26F5EC3B004187F2 /* SupportingFiles */,
+				EE4B6FB826D27E72005352A2 /* Info.plist */,
+				EE30D25C26DE726100AF0DC7 /* GoogleService-Info.plist */,
+				EE4B6FAF26D27E6E005352A2 /* MemeAlarmApp.swift */,
+				EE4B6FBE26D28155005352A2 /* Views */,
+				EE4B6FC026D28160005352A2 /* ViewModel */,
+				EE4B6FBF26D2815A005352A2 /* Model */,
+				EE4B6FC226D2816E005352A2 /* Services */,
+				EE4B6FC126D28168005352A2 /* Data */,
+				EE4B6FB326D27E71005352A2 /* Assets.xcassets */,
+				EE4B6FB526D27E71005352A2 /* Preview Content */,
+			);
+			path = MemeAlarm;
+			sourceTree = "<group>";
+		};
+		EE4B6FB526D27E71005352A2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE4B6FB626D27E71005352A2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE4B6FBE26D28155005352A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE4B6FB126D27E6E005352A2 /* MainTabView.swift */,
+				EE4B6FC326D2822B005352A2 /* HomeView.swift */,
+				EE08184826D3CC13005E74DD /* MemeFullScreen.swift */,
+				EE4B6FC526D2823C005352A2 /* ListAlarms.swift */,
+				EE39CDA126DFB9E700DE0348 /* EditAlarm.swift */,
+				EE4B6FC726D28251005352A2 /* ListFavourites.swift */,
+				EE4B6FC926D2825A005352A2 /* Settings.swift */,
+				DFB0380828082DBB00806CB6 /* SettingsDetailView.swift */,
+				EE067AE126EA1A3F00564B6E /* DayCircles.swift */,
+				EE3FB20D26F0B799005C26BD /* ListSounds.swift */,
+				DFB03806280829CD00806CB6 /* WhiteBoxList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE4B6FBF26D2815A005352A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE08184A26D3CC41005E74DD /* Models.swift */,
+				EE58AA5E26ECC17800BECB02 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE4B6FC026D28160005352A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE08184C26D3CD97005E74DD /* AlarmModel.swift */,
+				EE3FB20F26F0BC04005C26BD /* SoundControls.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE4B6FC126D28168005352A2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E841868926E4C5D50032194E /* StorageFunctions.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE4B6FC226D2816E005352A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E841868F26E4C6080032194E /* LocalSettings.json */,
+				E808568B26E8E67300C91EBA /* SavedSettings.json */,
+				EE56151126DA3693005B4098 /* ImageLoader.swift */,
+				EE56151226DA3693005B4098 /* URLImage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEF57C7B26F5EC3B004187F2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EEF57C7E26F5ECBB004187F2 /* logo.png */,
+				EE00131D26F9F85A0013531A /* Alarm Fast.mp3 */,
+				EE00131726F9F8590013531A /* Analogue Watch Alarm.mp3 */,
+				EE00131A26F9F8590013531A /* Annoying Alarm Clock.mp3 */,
+				EE00131926F9F8590013531A /* Cartoon Telephone.mp3 */,
+				EE00131826F9F8590013531A /* Dog Barking.mp3 */,
+				EE00132026F9F85A0013531A /* Formula 1.mp3 */,
+				EE00131C26F9F85A0013531A /* Morning Clock Alarm.mp3 */,
+				EE00131526F9F8580013531A /* Old Fashioned School Bell.mp3 */,
+				EE00131E26F9F85A0013531A /* School Fire Alarm.mp3 */,
+				EE00131B26F9F8590013531A /* Seagulls.mp3 */,
+				EE00131F26F9F85A0013531A /* Ship Bell.mp3 */,
+				EE00131326F9F8580013531A /* Tolling Bell.mp3 */,
+				EE00131426F9F8580013531A /* Tornado Siren.mp3 */,
+				EE00131226F9F8580013531A /* Vintage Warning Alarm.mp3 */,
+				EE00131626F9F8580013531A /* Woop Woop.mp3 */,
+				EEF57C7C26F5ECA8004187F2 /* Siren.mp3 */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE4B6FAB26D27E6E005352A2 /* MemeAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4B6FBB26D27E72005352A2 /* Build configuration list for PBXNativeTarget "MemeAlarm" */;
+			buildPhases = (
+				D3120917C33A1FC071705363 /* [CP] Check Pods Manifest.lock */,
+				EE4B6FA826D27E6E005352A2 /* Sources */,
+				EE4B6FA926D27E6E005352A2 /* Frameworks */,
+				EE4B6FAA26D27E6E005352A2 /* Resources */,
+				4D91EF6F9CF5C9744266F09B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemeAlarm;
+			productName = MemeAlarm;
+			productReference = EE4B6FAC26D27E6E005352A2 /* MemeAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE4B6FA426D27E6E005352A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EE4B6FAB26D27E6E005352A2 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = EE4B6FA726D27E6E005352A2 /* Build configuration list for PBXProject "MemeAlarm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE4B6FA326D27E6E005352A2;
+			productRefGroup = EE4B6FAD26D27E6E005352A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE4B6FAB26D27E6E005352A2 /* MemeAlarm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE4B6FAA26D27E6E005352A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE00132B26F9F85A0013531A /* Morning Clock Alarm.mp3 in Resources */,
+				EE00132C26F9F85A0013531A /* Alarm Fast.mp3 in Resources */,
+				EE00132126F9F85A0013531A /* Vintage Warning Alarm.mp3 in Resources */,
+				EE4B6FB726D27E71005352A2 /* Preview Assets.xcassets in Resources */,
+				EE00132E26F9F85A0013531A /* Ship Bell.mp3 in Resources */,
+				EE00132926F9F85A0013531A /* Annoying Alarm Clock.mp3 in Resources */,
+				EE4B6FB426D27E71005352A2 /* Assets.xcassets in Resources */,
+				EE00132226F9F85A0013531A /* Tolling Bell.mp3 in Resources */,
+				EEF57C7D26F5ECA8004187F2 /* Siren.mp3 in Resources */,
+				EE00132726F9F85A0013531A /* Dog Barking.mp3 in Resources */,
+				E841869026E4C6080032194E /* LocalSettings.json in Resources */,
+				EE00132826F9F85A0013531A /* Cartoon Telephone.mp3 in Resources */,
+				EEF57C7F26F5ECBB004187F2 /* logo.png in Resources */,
+				EE00132A26F9F85A0013531A /* Seagulls.mp3 in Resources */,
+				EE00132426F9F85A0013531A /* Old Fashioned School Bell.mp3 in Resources */,
+				EE00132626F9F85A0013531A /* Analogue Watch Alarm.mp3 in Resources */,
+				EE00132326F9F85A0013531A /* Tornado Siren.mp3 in Resources */,
+				EE00132526F9F85A0013531A /* Woop Woop.mp3 in Resources */,
+				EE30D25D26DE726100AF0DC7 /* GoogleService-Info.plist in Resources */,
+				EE00132D26F9F85A0013531A /* School Fire Alarm.mp3 in Resources */,
+				EE00132F26F9F85A0013531A /* Formula 1.mp3 in Resources */,
+				E808568C26E8E67300C91EBA /* SavedSettings.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D91EF6F9CF5C9744266F09B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemeAlarm/Pods-MemeAlarm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemeAlarm/Pods-MemeAlarm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MemeAlarm/Pods-MemeAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3120917C33A1FC071705363 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemeAlarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE4B6FA826D27E6E005352A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4B6FCA26D2825A005352A2 /* Settings.swift in Sources */,
+				EE08184B26D3CC41005E74DD /* Models.swift in Sources */,
+				EE56151326DA36E7005B4098 /* ImageLoader.swift in Sources */,
+				DFB03807280829CD00806CB6 /* WhiteBoxList.swift in Sources */,
+				EE3FB20E26F0B799005C26BD /* ListSounds.swift in Sources */,
+				EE067AE226EA1A3F00564B6E /* DayCircles.swift in Sources */,
+				E841868A26E4C5D50032194E /* StorageFunctions.swift in Sources */,
+				EE58AA5F26ECC17800BECB02 /* Constants.swift in Sources */,
+				EE4B6FB226D27E6E005352A2 /* MainTabView.swift in Sources */,
+				DFB0380928082DBB00806CB6 /* SettingsDetailView.swift in Sources */,
+				EE4B6FC426D2822B005352A2 /* HomeView.swift in Sources */,
+				EE4B6FB026D27E6E005352A2 /* MemeAlarmApp.swift in Sources */,
+				EE3FB21026F0BC04005C26BD /* SoundControls.swift in Sources */,
+				EE08184D26D3CD97005E74DD /* AlarmModel.swift in Sources */,
+				EE4B6FC826D28251005352A2 /* ListFavourites.swift in Sources */,
+				EE4B6FC626D2823C005352A2 /* ListAlarms.swift in Sources */,
+				EE39CDA226DFB9E700DE0348 /* EditAlarm.swift in Sources */,
+				EE08184926D3CC13005E74DD /* MemeFullScreen.swift in Sources */,
+				EE56151426DA36EA005B4098 /* URLImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE4B6FB926D27E72005352A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE4B6FBA26D27E72005352A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE4B6FBC26D27E72005352A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87EC922CA6C75C2451F34943 /* Pods-MemeAlarm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MemeAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = C988WYLTX9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MemeAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PiSquad.MemeAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EE4B6FBD26D27E72005352A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E75C056FDA66BA0F39FF42D /* Pods-MemeAlarm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MemeAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = C988WYLTX9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MemeAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PiSquad.MemeAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE4B6FA726D27E6E005352A2 /* Build configuration list for PBXProject "MemeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4B6FB926D27E72005352A2 /* Debug */,
+				EE4B6FBA26D27E72005352A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4B6FBB26D27E72005352A2 /* Build configuration list for PBXNativeTarget "MemeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4B6FBC26D27E72005352A2 /* Debug */,
+				EE4B6FBD26D27E72005352A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE4B6FA426D27E6E005352A2 /* Project object */;
+}

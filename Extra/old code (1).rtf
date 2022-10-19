@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red208\green168\blue255;\red31\green31\blue36;\red255\green255\blue255;
+\red161\green103\blue230;\red161\green103\blue230;\red208\green191\blue105;\red108\green121\blue134;\red252\green106\blue93;
+\red103\green183\blue164;\red252\green95\blue163;}
+{\*\expandedcolortbl;;\csgenericrgb\c81681\c65692\c99927;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c100000\c100000\c100000\c85000;
+\csgenericrgb\c63137\c40392\c90196;\csgenericrgb\c63232\c40219\c90115;\csgenericrgb\c81498\c74939\c41233;\csgenericrgb\c42394\c47462\c52518;\csgenericrgb\c98912\c41558\c36568;
+\csgenericrgb\c40538\c71705\c64209;\csgenericrgb\c98839\c37355\c63833;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12460\viewh12580\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 HStack\cf4  \{\
+                \
+                    \cf2 ZStack\cf4  \{\
+                        \cf2 Circle\cf4 ()\
+                            .\cf5 strokeBorder\cf4 (\cf2 Color\cf4 .\cf6 black\cf4 , lineWidth: \cf7 2\cf4 )\
+                            .\cf5 background\cf4 (\cf2 Circle\cf4 ().\cf5 foregroundColor\cf4 (.\cf6 white\cf4 ))\
+                            .\cf5 frame\cf4 (width: \cf8 /*@START_MENU_TOKEN@*/\cf7 100\cf8 /*@END_MENU_TOKEN@*/\cf4 , height: \cf8 /*@START_MENU_TOKEN@*/\cf7 100\cf8 /*@END_MENU_TOKEN@*/\cf4 , alignment: \cf8 /*@START_MENU_TOKEN@*/\cf4 .\cf6 center\cf8 /*@END_MENU_TOKEN@*/\cf4 )\
+                        \
+                        \cf2 VStack\cf4  \{\
+                            \cf2 Picker\cf4 (\cf9 "Category"\cf4 , selection: \cf10 $memeCategoryIndex\cf4 ) \{\
+                                \cf2 ForEach\cf4  (\cf7 0\cf5 ..<\cf10 model\cf4 .\cf10 memeCategories\cf4 .\cf6 count\cf4 )\{ index 
+\f1\b \cf11 in
+\f0\b0 \cf4 \
+                                    \cf2 Text\cf4 (\cf10 model\cf4 .\cf10 memeCategories\cf4 [index])\
+                                \}\
+                            \}\
+                            .\cf5 pickerStyle\cf4 (\cf2 MenuPickerStyle\cf4 ())\
+                            \
+                            \cf2 Text\cf4 (\cf10 model\cf4 .\cf10 memeCategories\cf4 [\cf10 memeCategoryIndex\cf4 ])\
+                            \}\
+                    \}\
+                    \
+                    \cf2 ZStack\cf4  \{\
+                        \cf2 Ellipse\cf4 ()\
+                            .\cf5 strokeBorder\cf4 (\cf2 Color\cf4 .\cf6 black\cf4 , lineWidth: \cf7 2\cf4 )\
+                            .\cf5 background\cf4 (\cf2 Ellipse\cf4 ().\cf5 foregroundColor\cf4 (.\cf6 white\cf4 ))\
+                            .\cf5 frame\cf4 (width: \cf7 220\cf4 , height: \cf7 150\cf4 , alignment: \cf8 /*@START_MENU_TOKEN@*/\cf4 .\cf6 center\cf8 /*@END_MENU_TOKEN@*/\cf4 )\
+\
+                        \
+                        \cf2 VStack\cf4  \{\
+                            \cf8 //grab text for viewmodel\cf4 \
+                            \cf2 Text\cf4 (\cf10 model\cf4 .\cf10 memeAlarmList\cf4 [\cf10 model\cf4 .\cf10 memeAlarmList\cf4 .\cf6 count\cf5 -\cf7 1\cf4 ].\cf10 alarmTime\cf4 )\
+                            \cf2 Text\cf4 (\cf10 model\cf4 .\cf10 memeAlarmList\cf4 [\cf10 model\cf4 .\cf10 memeAlarmList\cf4 .\cf6 count\cf5 -\cf7 1\cf4 ].\cf10 alarmDays\cf4 )\
+                        \}\
+                        \
+                    \}\
+                    .\cf5 offset\cf4 (x: \cf7 -12\cf4 )\
+                \
+                \}}

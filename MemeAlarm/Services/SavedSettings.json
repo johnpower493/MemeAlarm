@@ -1,0 +1,31 @@
+{
+  "id": "1",
+  "previousMeme": "clickbait_meme.jpg",
+  "tomorrowMeme": "teenager-wash-dishes.jpeg",
+  "backgroundColour": "someBackgroundColour",
+  "allAlarms":[
+      {   "id": "1m",
+          "alarmTime": "12:00",
+          "alarmDays": "MTWTF__",
+          "label": "1st Alarm name",
+          "sound": "Siren",
+          "memeCategory": "Technology",
+          "enabledAlarm": true
+      },
+      {   "id": "2m",
+          "alarmTime": "06:00",
+          "alarmDays": "MTWT___",
+          "label": "2nd Alarm label",
+          "sound": "Tolling Bell",
+          "memeCategory": "Dank",
+          "enabledAlarm": false
+      }
+  ],
+  "favouritedMemes": [
+      "teenager-wash-dishes.jpeg",
+      "search-random-images.jpeg",
+      "adults-before-turn-page.jpeg",
+      "flirting-2020-covid.jpeg",
+      "humans-vs-dog-dying.jpeg"
+  ]
+}
